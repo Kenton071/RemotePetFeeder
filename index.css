@@ -31,19 +31,21 @@
        text-align: center;
        border: 1px solid #bfbfbf;
        border-radius: 10rem;
+       
    }
    
    #quantityInput, #timeInput {
        width: 6rem;
        text-align: center;
-   
+       
    }
-   
+
    #addItemButtom {
        border: unset;
        background: #3fa184;
        color: #fff;
        padding: 0.5rem;
+       align-items: center;
    }
    
    #itemsDiv {

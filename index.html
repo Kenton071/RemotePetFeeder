@@ -11,30 +11,44 @@
 
     <body>
         <nav>
-            <h1>My Pet Feeder</h1>
+            <p>
+                My Pet Feeder
+            </p>
+
+
+
         </nav>
         <div class="container">
-            <form id="itemForm" action="api:url" method="post">
-                <label for="dogName">Name of Dog:</label>
-                <input type="text" name="dogName" id="nameInput" required>
+            <form id="itemForm">
+                <label>
+                    Name of Dog:
+                     <input type="text" id="nameInput" required>
+                </label>
                 
-                <label for="cups">Amount of cups (one serving):</label>
-                <input type="number" name="cups" id="quantityInput" min=0 max="5" required>
+                <label>
+                    Amount of cups(one serving):
+                    <input type="number" id="quantityInput" min=0 required>
+                </label>
                 
-                <label for="time">Time of Day:</label>
-                <input type="time" name="time" id="timeInput" required>
+                <label>
+                    Time of Day:
+                    <input type="time" id="timeInput" required>
+                </label>
                 
                 <button type="submit" id="addItemButtom">Feed Food</button>
+                
             </form>
         </div>
 
         <div id="itemsDiv">
             <div class="item ">
-                <label for="checkbox"></label>
-                <input type="checkbox" name="checkbox" class="checkbox" checked>
+                <label>
+                    <input type="checkbox" class="checkbox" checked>
+
+                </label>
                 <div class="ItemInfo">
-                    <p id="name"></p>
-                    <p>1 cup 13:00</p>
+                    <p>Max the Dog</p>
+                    <p>1cup 13:00</p>
                 </div>
 
                 <button class="deleteButton">X</button>
@@ -45,6 +59,6 @@
         
         </div>
         
-        <script srs="index.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
